@@ -1,76 +1,72 @@
 <!DOCTYPE html>
-
 <html>
-<head>
+    <head>
+        <title> Forms </title>
+        <link rel = "stylesheet" href = "css\layout.css" type = "text/css" />
+        <link rel = "stylesheet" href = "css\style.css" type = "text/css" />
+        <!--Kot per pordh shtova kte komentin-->
+        <script style = "text/javascript">
 
-	<title> Forms </title>
-	<link rel = "stylesheet" href = "css\layout.css" type = "text/css" />
-	<link rel = "stylesheet" href = "css\style.css" type = "text/css" />
-	<!--Kot per pordh shtova kte komentin-->
-	<script style = "text/javascript">
-		
-		function click(){
-			document.getElementById(f).reset();
-		}
-		
-	</script>
-	
-	<meta charset = "UTF-8" />
-	<meta name = "author" content = "Nedjan Shabani" />
+        function click(){
+        document.getElementById(f).reset();
+        }
 
-	</head>
+        </script>
 
-<body>
-	<div id = "page">
-	
-		<h1> Detyre Kursi 4: Sisteme Multimediale</h1>
-		<div id = "top" >
-			
-			<div id = "form" class= "element"  >
-				
-				<form  id="f">
-					<fieldset>
-						<legend>Subscribe</legend>
-						
-						<label>Emri</label>
-						<input type = "text" name = "username" placeholder = "emri" />
-						
-						<label>Adresa e e-mailit</label>
-						<input type = "email" name = "email" placeholder = "email" />
-						<br />
-						
-						<label> Abonohuni ne buletinin tone </label>
-						<input type = "checkbox" name = "subscribe" checked value = "subscribe" />
-						<br /><br />
-						
-						<label>Lini nje koment mbi faqen tone.</label>
-						<br />
-						<textarea  rows = "5" cols = "30" name = "koment" placeholder="koment"></textarea>
-						
-						<input  type = "submit" name = "submit" value = "dergo" class="button" onclick = "click()" />
-					</fieldset>
-				</form>   
-				 
-			</div>
-			
-			<div id = "music" class= "element" >
-				
-				<h2>Ne Tropik - Kenge per femije.</h2>
-				<audio src = "music\Ne Tropik.mp3"  controls loop> Shfletuesi juaj nuk e suporton kete format. </audio>
-				
-			</div>
-			
-		</div>
-		
-		<div id = "video"class= "element" >
-			
-			<h2> Turizmi Shqiptar - Reklame promocionale </h2>
-			<video   src = "video\Albanian Tourism - CNN.mp4" width = "640" height = "360"  poster = "foto\peisazh.jpg" controls >  
-				Shfletuesi juaj nuk e suporton kete format.
-			</video>
-		
-		</div>
-		
-	</div>
-</body>
+        <meta charset = "UTF-8" />
+        <meta name = "author" content = "Nedjan Shabani" />
+    </head>
+    <body>
+        <div id = "page">
+
+            <h1> Detyre Kursi 4: Sisteme Multimediale</h1>
+            <div id = "top" >
+
+                <div id = "form" class= "element"  >
+
+                    <form  id="f">
+                        <fieldset>
+                            <legend>Subscribe</legend>
+
+                            <label>Emri</label>
+                            <input type = "text" name = "username" placeholder = "emri" />
+
+                            <label>Adresa e e-mailit</label>
+                            <input type = "email" name = "email" placeholder = "email" />
+                            <br />
+
+                            <label> Abonohuni ne buletinin tone </label>
+                            <input type = "checkbox" name = "subscribe" checked value = "subscribe" />
+                            <br /><br />
+
+                            <label>Lini nje koment mbi faqen tone.</label>
+                            <br />
+                            <textarea  rows = "5" cols = "30" name = "koment" placeholder="koment"></textarea>
+
+                            <input  type = "submit" name = "submit" value = "dergo" class="button" onclick = "click()" />
+                        </fieldset>
+                    </form>
+
+                </div>
+
+                <div id = "music" class= "element" >
+
+                    <h2>Ne Tropik - Kenge per femije.</h2>
+                    <audio src = "music\Ne Tropik.mp3"  controls loop> Shfletuesi juaj nuk e suporton kete format. </audio>
+
+                </div>
+
+            </div>
+
+            <div id = "video"class= "element" >
+
+                <h2> Turizmi Shqiptar - Reklame promocionale </h2>
+                <video   src = "video\Albanian Tourism - CNN.mp4" width = "640" height = "360"  poster = "foto\peisazh.jpg" controls >
+                    Shfletuesi juaj nuk e suporton kete format.
+                </video>
+
+            </div>
+
+        </div>
+    </body>
 </html>
